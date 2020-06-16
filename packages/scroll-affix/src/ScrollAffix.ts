@@ -26,7 +26,7 @@ const enum EAffixStatus {
 }
 
 export default class ScrollAffix {
-    private options: AffixOptions;
+    public options: AffixOptions;
 
     private status: EAffixStatus = EAffixStatus.normal;
 
@@ -44,16 +44,21 @@ export default class ScrollAffix {
     }
 
     private handleScroll = () => {
-        const { offsetTop, maxScrollHeight: optMaxScrollHeight } = this.options;
-        const maxScrollHeight = (typeof optMaxScrollHeight === 'function'
+        const { el, offsetTop, maxScrollHeight: optMaxScrollHeight, sectionSelector } = this.options;
+        let maxScrollHeight = (typeof optMaxScrollHeight === 'function'
             ? optMaxScrollHeight()
             : optMaxScrollHeight) as number;
+
+        if (sectionSelector) {
+            const sectionEl = document.querySelector(sectionSelector) as HTMLElement;
+            maxScrollHeight = getAbsPoint(sectionEl).y + sectionEl.offsetHeight;
+        }
 
         const scrollTop = getScrollTop();
 
         let targetStatus = EAffixStatus.normal;
 
-        if (maxScrollHeight && scrollTop + offsetTop! + this.options.el.offsetHeight > maxScrollHeight) {
+        if (maxScrollHeight && scrollTop + offsetTop! + el.offsetHeight > maxScrollHeight) {
             targetStatus = EAffixStatus.max;
         } else if (scrollTop + offsetTop! > this.baseTop) {
             targetStatus = EAffixStatus.affix;

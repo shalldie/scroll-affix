@@ -2,7 +2,13 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "lerna clean --yes",
+    "bootstrap": "lerna bootstrap",
+    "build:lp": "lerna run build",
+    "build": "sh scripts/build.sh",
+    "lint": "eslint --ext .js,.ts .",
+    "fix": "eslint --fix --ext .js,.ts .",
+    "lp": "lerna publish"
   },
   "devDependencies": {
     "@nosaid/eslint-config-for-typescript": "0.0.7",

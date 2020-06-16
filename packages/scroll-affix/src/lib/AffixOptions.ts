@@ -20,9 +20,16 @@ export default class AffixOptions {
      */
     offsetTop?: number = 0;
     /**
-     * 可滚动的高度
+     * 可浮动的区域高度
      *
      * @memberof AffixOptions
      */
     maxScrollHeight?: number | (() => number);
+    /**
+     * 通过选择器选择元素，获取可浮动区域高度
+     *
+     * @type {string}
+     * @memberof AffixOptions
+     */
+    sectionSelector?: string;
 }
