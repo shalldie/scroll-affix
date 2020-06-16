@@ -1,0 +1,41 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    margin: 100px auto 120vh;
+    width: 1000px;
+
+    .main {
+        position: relative;
+        width: 700px;
+        height: 200vh;
+        // margin: 100px auto 500px;
+        margin-right: 100px;
+        background: #eee;
+    }
+
+    .right-menu {
+        flex: 1;
+
+        .affix-bar {
+            background: #eee;
+            ul {
+                margin: 0;
+                padding: 20px;
+                list-style-type: none;
+                li {
+                    margin: 0;
+                    padding: 0;
+                    height: 40px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}
