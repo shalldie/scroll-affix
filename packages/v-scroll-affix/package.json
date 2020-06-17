@@ -1,6 +1,6 @@
 {
   "name": "v-scroll-affix",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A lightweight vue component for affixing an element as you scroll. 轻量级 vue 固钉组件。",
   "main": "dist/v-scroll-affix.js",
   "scripts": {
