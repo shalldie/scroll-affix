@@ -8,6 +8,10 @@ A lightweight lib for making navigation elements affix as you scroll, a wrapper 
 
 在滚动时激活固钉的轻量级 vue 组件，封装自 [scroll-affix][scroll-affix] 。
 
+## Live Demo
+
+[live demo](https://shalldie.github.io/demos/v-scroll-affix/)
+
 ## Installation
 
     npm install v-scroll-affix --save
@@ -55,7 +59,8 @@ export default {
 
 | name            |          type          | default | description                                                                                    |
 | :-------------- | :--------------------: | :-----: | :--------------------------------------------------------------------------------------------- |
-| maxScrollHeight | `number`、`()=>number` |   `0`   | max height to affix element <br> 自定义可浮动区域的最大高度                                    |
+| offsetTop       |        `number`        |   `0`   | offsetTop to affix element <br> 浮动的 y 轴偏移量                                              |
+| maxScrollHeight | `number`、`()=>number` |         | max height to affix element <br> 自定义可浮动区域的最大高度                                    |
 | sectionSelector |        `string`        |         | get max height to affix element by section element <br> 根据关联区域动态获取可浮动区域最大高度 |
 
 ## Enjoy it! :D
