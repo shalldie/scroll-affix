@@ -1,6 +1,6 @@
 {
   "name": "v-scroll-affix",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A lightweight vue component for affixing an element as you scroll. 轻量级 vue 固钉组件。",
   "main": "index.js",
   "scripts": {
@@ -36,7 +36,7 @@
   "devDependencies": {
     "@rollup/plugin-buble": "^0.21.3",
     "rollup-plugin-vue": "^5.1.9",
-    "scroll-affix": "^0.0.1",
+    "scroll-affix": "^0.0.2",
     "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.11"
   }

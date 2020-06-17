@@ -1,6 +1,6 @@
 {
   "name": "scroll-affix",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A lightweight lib for affixing an element as you scroll. 轻量级固钉库。",
   "main": "dist/scroll-affix.js",
   "types": "dist/ScrollAffix.d.ts",
