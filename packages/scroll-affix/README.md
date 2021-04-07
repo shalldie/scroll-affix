@@ -1,8 +1,8 @@
 # scroll-affix
 
-[![npm](https://img.shields.io/npm/v/scroll-affix)](https://www.npmjs.com/package/scroll-affix)
-[![file size](https://img.shields.io/github/size/shalldie/scroll-affix/dist/scroll-affix.js)](https://github.com/shalldie/scroll-affix)
-[![Build Status](https://github.com/shalldie/scroll-affix/actions/workflows/node.js.yml/badge.svg)](https://github.com/shalldie/scroll-affix/actions)
+[![npm](https://img.shields.io/npm/v/scroll-affix?logo=npm&style=flat-square)](https://www.npmjs.com/package/scroll-affix)
+[![file size](https://img.shields.io/github/size/shalldie/scroll-affix/dist/scroll-affix.js?style=flat-square)](https://github.com/shalldie/scroll-affix)
+[![Build Status](https://img.shields.io/github/workflow/status/shalldie/scroll-affix/ci?label=build&logo=github&style=flat-square)](https://github.com/shalldie/scroll-affix/actions)
 
 A lightweight lib for making navigation elements affix as you scroll.
 
