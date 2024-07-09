@@ -41,6 +41,7 @@ export default class ScrollAffix {
         this.baseTop = getAbsPoint(this.options.el).y;
         // init listener
         window.addEventListener('scroll', this.handleScroll);
+        this.handleScroll();
     }
 
     private handleScroll = () => {
@@ -100,5 +101,6 @@ export default class ScrollAffix {
      */
     public dispose(): void {
         window.removeEventListener('scroll', this.handleScroll);
+        this.options.el.classList.remove(AFFIX_CLASS, AFFIX_MAX_CLASS);
     }
 }
